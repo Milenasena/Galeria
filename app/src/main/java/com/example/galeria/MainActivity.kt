@@ -6,6 +6,7 @@ import androidx.activity.compose.setContent
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.width
 import androidx.compose.material.Card
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
@@ -14,7 +15,10 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
 import com.example.galeria.ui.theme.GaleriaTheme
 
 class MainActivity : ComponentActivity() {
@@ -27,7 +31,11 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-                    Fotos()
+                    Fotos(
+                        idImagem = R.drawable.m6,
+                        idDescricao = R.string.descricao_m6,
+
+                    )
                 }
             }
         }
@@ -47,7 +55,11 @@ fun Fotos(
                 contentDescription = null
             )
             Text(
-                text = stringResource(id = idDescricao)
+                text = stringResource(id = idDescricao) ,
+                fontWeight = FontWeight.Bold,
+                textAlign = TextAlign.Center,
+                modifier = Modifier.width(160.dp)
+
             )
 
         }

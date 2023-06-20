@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Galeria</string>
+    <string name="descricao_m8"> Você consegue</string>
+    <string name="descricao_m7"> Você é inteligente</string>
+    <string name="descricao_m6"> Você é incrível</string>
+    <string name="descricao_m5"> Foque nos seus sonhos</string>
+    <string name="descricao_m4"> Você é forte</string>
+    <string name="descricao_m3"> Estude</string>
+    <string name="descricao_m2"> Não tenha medo</string>
+    <string name="descricao_m1"> Se autoconheça</string>
 </resources>
